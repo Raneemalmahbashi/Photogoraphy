@@ -1,0 +1,43 @@
+.filter-box {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* Style the label */
+.filter-box label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Style the select dropdown */
+.filter-box select {
+    padding: 6px;
+    font-size: 14px;
+    /* border: 1px solid #3498db; */
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    color: #333;
+    cursor: pointer;
+    transition: border-color 0.3s ease-in-out;
+    /*-webkit-appearance: none;  Remove default arrow in some browsers */
+}
+
+/* Style the select dropdown arrow */
+.filter-box select::after {
+    content: "\25BC"; /* Unicode down arrow character */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+/* Style the select dropdown on hover/focus */
+.filter-box select:hover,
+.filter-box select:focus {
+    border-color: #e3e7c9;
+    outline: none;
+}
